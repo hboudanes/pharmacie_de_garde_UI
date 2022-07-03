@@ -21,7 +21,7 @@ class Splash extends StatelessWidget {
               height: 135.h,
             ),
             SizedBox(height: 20.h),
-            Text(TextData.splashTitleFr, style: ThemeTextStyle().splashTitle),
+            Text(TextData.appName, style: ThemeTextStyle().splashTitle),
             SizedBox(height: 30.h),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 20.w),
