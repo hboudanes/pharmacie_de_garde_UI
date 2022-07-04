@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pharmacie_de_garde_ui/service/admob/ad_help.dart';
-import 'package:pharmacie_de_garde_ui/view/home.dart';
-import 'package:pharmacie_de_garde_ui/view/splash.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+
+
+import '/view/home.dart';
+
+
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

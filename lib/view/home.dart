@@ -1,16 +1,15 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:pharmacie_de_garde_ui/components/city.dart';
-import 'package:pharmacie_de_garde_ui/controller/admob_controller.dart';
-import 'package:pharmacie_de_garde_ui/controller/home_controller.dart';
 
+import 'package:get/get.dart';
+import 'package:pharmacie_de_garde_ui/view/splash.dart';
+
+import '/components/panl_city.dart';
+import '/components/search_bar.dart';
+import '/controller/admob_controller.dart';
+import '/controller/home_controller.dart';
 import '/components/custom_drawer.dart';
-import '/theme/theme_colors.dart';
-import '/theme/theme_text_style.dart';
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
@@ -25,6 +24,11 @@ class Home extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           admobController.showInterstitialAd();
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) {
+              return Splash();
+            },
+          ));
         },
       ),
       body: SafeArea(
@@ -42,38 +46,10 @@ class Home extends StatelessWidget {
                 ),
               ),
               SizedBox(width: 14.9.w),
-              Container(
-                width: 569.w,
-                height: 84.h,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(18)),
-                child: Padding(
-                  padding: EdgeInsets.only(left: 37.w, right: 25.w), //2537
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: TextFormField(
-                          style: ThemeTextStyle().searchBar,
-                          decoration: InputDecoration(
-                            hintText: 'Trouve le ville',
-                            hintStyle: ThemeTextStyle().searchBarHint,
-                            border: InputBorder.none,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 40.w,
-                      ),
-                      Icon(
-                        Icons.search,
-                        color: ThemeColors.primary,
-                        size: 38.38.h,
-                      )
-                    ],
-                  ),
-                ),
+              SearchBar(
+                title: 'hi',
+                onChanged: (String ff) {},
+                onTap: (String ff) {},
               )
             ],
           ),
@@ -92,10 +68,10 @@ class Home extends StatelessWidget {
                   builder: ((controller) {
                     return ListView.builder(
                         itemCount: controller.cities.length,
-                        itemBuilder: ((BuildContext, index) {
+                        itemBuilder: ((BuildContext buildContext, index) {
                           return Column(
                             children: [
-                              City(
+                              PanlCity(
                                 name:
                                     controller.cities.elementAt(index)['name'],
                                 scheduleDay: controller.cities
@@ -120,8 +96,8 @@ class Home extends StatelessWidget {
                                         ad: admobController.bannerAd,
                                       ),
                                     )
-                                  : SizedBox(
-                                      height: 1,
+                                  : const SizedBox(
+                                      height: 0,
                                     )
                             ],
                           );

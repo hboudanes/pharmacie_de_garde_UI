@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-import '../service/admob/ad_help.dart';
+import '/service/admob/ad_help.dart';
 
 class AdmobController extends GetxController {
   //we want to be able to check if the ad is loaded before displaying it.
@@ -71,7 +71,7 @@ class AdmobController extends GetxController {
           interstitialLoadAttempts = 0;
         },
         onAdFailedToLoad: (LoadAdError error) {
-          print('----------------------------------dskljsdlkjslkdjlskdjlksd-');
+          
           interstitialLoadAttempts += 1;
           interstitialAd = null;
           if (interstitialLoadAttempts <= maxFailedLoadAttempts) {

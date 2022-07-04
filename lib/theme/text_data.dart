@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-
 abstract class TextData {
-  //fr
+//fr
 
   static const String appName = "Pharmacies de Garde";
   //splash
@@ -14,4 +12,6 @@ abstract class TextData {
   static const String inFacebook = "Dans FaceBook";
   //share
   static const String share = "Partager";
+  //panal
+  static const String valid = "Valide";
 }

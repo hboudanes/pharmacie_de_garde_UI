@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pharmacie_de_garde_ui/components/drawer_button.dart';
 
-import '../theme/ImagePath.dart';
-import '../theme/text_data.dart';
-import '../theme/theme_colors.dart';
-import '../theme/theme_text_style.dart';
+import '/theme/Image_path.dart';
+import '/theme/text_data.dart';
+import '/theme/theme_colors.dart';
+import '/theme/theme_text_style.dart';
 import 'drawer_button_share.dart';
 
 class CustomDrawer extends StatelessWidget {

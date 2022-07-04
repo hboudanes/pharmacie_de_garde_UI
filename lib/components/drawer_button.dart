@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../theme/theme_text_style.dart';
+
+import '/theme/theme_colors.dart';
+import '/theme/theme_text_style.dart';
 
 class DrawerButton extends StatelessWidget {
   final Function()? onTap;
@@ -23,19 +25,19 @@ class DrawerButton extends StatelessWidget {
         padding: EdgeInsets.only(left: 56.w),
         height: 99.h,
         decoration: BoxDecoration(
-           color: Colors.white,
+            color: Colors.white,
             border: Border(
                 bottom: BorderSide.none,
                 top: BorderSide(
-          width: 1.h,
-          color: const Color(0xFF707070).withOpacity(0.10),
-        ))),
+                  width: 1.h,
+                  color: ThemeColors.drawerButtonBorder.withOpacity(0.10),
+                ))),
         width: double.infinity,
         child: Row(children: [
-          Container(
+          SizedBox(
             width: 32.h,
             height: 32.h,
-            child:prefixIcon!,
+            child: prefixIcon!,
           ),
           SizedBox(
             width: 64.w,
@@ -46,13 +48,13 @@ class DrawerButton extends StatelessWidget {
           ),
           star == true
               ? Row(
-                //return list 5 icon 
+                  //return list 5 icon
                   children: List.generate(
                       5,
                       (index) => Icon(
                             Icons.star,
                             size: 24.h,
-                            color: const Color(0xFF01875F),
+                            color: ThemeColors.star,
                           )).toList(),
                 )
               : const SizedBox(

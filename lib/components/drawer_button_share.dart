@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../theme/theme_text_style.dart';
+import 'package:pharmacie_de_garde_ui/theme/theme_colors.dart';
+import '/theme/theme_text_style.dart';
 
 class DrawerButtonShare extends StatelessWidget {
   final Function()? onTap;
@@ -25,7 +26,7 @@ class DrawerButtonShare extends StatelessWidget {
             border: Border(
                 bottom: BorderSide(
                   width: 1.h,
-                  color: const Color(0xFF707070).withOpacity(0.10),
+                  color:  ThemeColors.drawerButtonBorder.withOpacity(0.10),
                 ),
                 top: BorderSide.none)),
         width: double.infinity,

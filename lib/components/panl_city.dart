@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pharmacie_de_garde_ui/theme/theme_colors.dart';
+import 'package:pharmacie_de_garde_ui/theme/text_data.dart';
+import 'package:pharmacie_de_garde_ui/theme/theme_text_style.dart';
 
-class City extends StatefulWidget {
+import '/theme/theme_colors.dart';
+
+class PanlCity extends StatefulWidget {
   final String? name;
   final String? scheduleNight;
   final String? scheduleDay;
   final String? ondutyDate;
-  const City(
+  const PanlCity(
       {Key? key,
       this.name,
       this.scheduleNight,
@@ -16,10 +19,10 @@ class City extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<City> createState() => _CityState();
+  State<PanlCity> createState() => _PanlCityState();
 }
 
-class _CityState extends State<City> {
+class _PanlCityState extends State<PanlCity> {
   bool isExpanded = false;
   double height = 115.h;
   double counter = 0;
@@ -40,7 +43,7 @@ class _CityState extends State<City> {
         width: double.infinity,
         height: height,
         decoration: BoxDecoration(
-            color: Color(0xFFDFDEFF),
+            color: ThemeColors.panlCityBackground,
             borderRadius: BorderRadius.circular(54.r)),
         child: Column(
           children: [
@@ -61,10 +64,7 @@ class _CityState extends State<City> {
                     SizedBox(width: 13.w),
                     Text(
                       widget.name!,
-                      style: TextStyle(
-                          color: ThemeColors.primary,
-                          fontSize: 35.sp,
-                          fontFamily: 'Ubuntu'),
+                      style: ThemeTextStyle().panalTitle
                     ),
                   ],
                 ),
@@ -108,19 +108,13 @@ class _CityState extends State<City> {
                         Row(
                           children: [
                             Text(
-                              'valable:',
-                              style: TextStyle(
-                                  color: ThemeColors.primary,
-                                  fontSize: 21.sp,
-                                  fontFamily: 'UbuntuMedium'),
+                              TextData.valid,
+                              style: ThemeTextStyle().panalSubTitleMedium,
                             ),
                             SizedBox(width: 12.w),
                             Text(
                               widget.ondutyDate!,
-                              style: TextStyle(
-                                  color: ThemeColors.primary,
-                                  fontSize: 21.sp,
-                                  fontFamily: 'Ubuntu'),
+                              style: ThemeTextStyle().panalSubTitle,
                             )
                           ],
                         ),
@@ -132,15 +126,12 @@ class _CityState extends State<City> {
                             Icon(
                               Icons.light_mode,
                               size: 24.h,
-                              color: Color(0xFF56CED6),
+                              color: ThemeColors.iconInDay,
                             ),
                             SizedBox(width: 12.w),
                             Text(
                               widget.scheduleDay!,
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20.sp,
-                                  fontFamily: 'UbuntuBlod'),
+                              style: ThemeTextStyle().panaltext,
                             ),
                           ],
                         ),
@@ -155,10 +146,7 @@ class _CityState extends State<City> {
                             SizedBox(width: 12.w),
                             Text(
                               widget.scheduleNight!,
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20.sp,
-                                  fontFamily: 'UbuntuBlod'),
+                              style: ThemeTextStyle().panaltext
                             ),
                           ],
                         )
