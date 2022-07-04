@@ -1,0 +1,281 @@
+{
+    "Cities" :[
+        {
+          "name": "Agadir",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Ait Melloul",
+          "in_night": "22h00 to 09h00",
+          "in_day": "09h00 to 22h00",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Al Hoceïma",
+          "in_night": "17h00 to 10h00",
+          "in_day": "",
+          "valid": "Dimanche 03 July 2022"
+        },
+        {
+          "name": "Azemmour",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Azrou",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Benslimane",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Berkane",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Berrechid",
+          "in_night": "24/24",
+          "in_day": "09h00 to 23h30",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Bouznika",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Dimanche 03 July 2022"
+        },
+        {
+          "name": "Casablanca",
+          "in_night": "24/24",
+          "in_day": "08h30 to 22h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Chefchaouen",
+          "in_night": "20h00 to 09h00",
+          "in_day": "09h00 to 20h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Dakhla",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Dcheira",
+          "in_night": "22h00 to 09h00",
+          "in_day": "09h00 to 20h00",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "ElJadida",
+          "in_night": "21h00 to 09h00",
+          "in_day": "09h00 to 21h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Errachidia",
+          "in_night": "21h00 to 09h30",
+          "in_day": "09h30 to 21h00",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Essaouira",
+          "in_night": "22h00 to 09h00",
+          "in_day": "09h00 to 22h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Fès",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Guelmim",
+          "in_night": "00h00 to 09h30",
+          "in_day": "09h30 to 00h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Inezgane",
+          "in_night": "22h00 to 09h00",
+          "in_day": "09h00 to 22h00",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Kénitra",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Khouribga",
+          "in_night": "23h30 to 10h00",
+          "in_day": "10h00 to 23h30",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Ksar El Kebir",
+          "in_night": "24/24",
+          "in_day": "09h30 to 20h00",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Laâyoune",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Larache",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Marrakech",
+          "in_night": "23h00 to 09h00",
+          "in_day": "09h00 to 23h00",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Meknès",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Dimanche 03 July 2022"
+        },
+        {
+          "name": "Mohammédia",
+          "in_night": "22h00 to 09h00",
+          "in_day": "09h00 to 22h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Nador",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Dimanche 03 July 2022"
+        },
+        {
+          "name": "Oujda",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "from 01 to 03 July 2022"
+        },
+        {
+          "name": "Rabat",
+          "in_night": "24/24",
+          "in_day": "09h00 to 00h00",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Safi",
+          "in_night": "22h00 to 10h00",
+          "in_day": "10h00 to 22h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Salé",
+          "in_night": "24/24",
+          "in_day": "09h00 to 00h00",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Séfrou",
+          "in_night": "21h00 to 09h00",
+          "in_day": "09h00 to 21h00",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Settat",
+          "in_night": "24/24",
+          "in_day": "09h30 to 00h00",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Sidi Kacem",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Tanger",
+          "in_night": "20h00 to 09h00",
+          "in_day": "09h00 to 20h00",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "TanTan",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Taourirt",
+          "in_night": "24/24",
+          "in_day": "09h00 to 17h30",
+          "valid": "Dimanche 03 July 2022"
+        },
+        {
+          "name": "Taroudant",
+          "in_night": "24/24",
+          "in_day": "09h00 to 23h00",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Taza",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Témara",
+          "in_night": "24/24",
+          "in_day": "09h00 to 23h00",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Tétouan",
+          "in_night": "21h30 to 09h00",
+          "in_day": "09h00 to 21h30",
+          "valid": "Sam./Dim. 02/03 July 2022"
+        },
+        {
+          "name": "Tikiouine",
+          "in_night": "00h00 to 09h00",
+          "in_day": "09h00 to 00h00",
+          "valid": "from 02 to 08 July 2022"
+        },
+        {
+          "name": "Tiznit",
+          "in_night": "20h30 to 09h00",
+          "in_day": "09h00 to 20h30",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Youssoufia",
+          "in_night": "24/24",
+          "in_day": "",
+          "valid": "from 27 to 03 July 2022"
+        },
+        {
+          "name": "Zagora",
+          "in_night": "23h30 to 09h00",
+          "in_day": "09h00 to 23h30",
+          "valid": "from 02 to 08 July 2022"
+        }
+      ]
+ 
+}

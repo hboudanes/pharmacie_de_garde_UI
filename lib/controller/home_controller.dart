@@ -1,32 +1,24 @@
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-import '../service/admob/ad_help.dart';
-
-class HomeController extends GetxController{
-  late BannerAd bottomBannerAd;
-  RxBool isBottomBannerAdLoaded = false.obs;
-  @override
-  void onInit() {
-    createBottomBannerAd();
-    super.onInit();
+class HomeController extends GetxController {
+  List cities = [];
+  //just for test UI but in project use firecloud and database Realtime 
+  Future<void> readJson() async {
+    final String response = await rootBundle.loadString('asset/cities.json');
+    final data = await json.decode(response) as Map;
+    List city = data.values.elementAt(0);
+    city.forEach((element) {
+      cities.add(element);
+    });
+    update();
   }
-  void createBottomBannerAd() {
-    bottomBannerAd = BannerAd(
-      adUnitId: AdHelper.bannerAdUnitId,
-      size: AdSize.banner,
-      request: AdRequest(),
-      listener: BannerAdListener(
-        onAdLoaded: (_) {
-         
-            isBottomBannerAdLoaded.value = true;
-          
-        },
-        onAdFailedToLoad: (ad, error) {
-          ad.dispose();
-        },
-      ),
-    );
-    bottomBannerAd.load();
+
+  @override
+  void onInit() async {
+    await readJson();
+    super.onInit();
   }
 }

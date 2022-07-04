@@ -48,24 +48,27 @@ class _CityState extends State<City> {
               height: 20.h,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(width: 35.w),
-                Icon(
-                  Icons.apartment,
-                  size: 24.h,
-                  color: ThemeColors.primary,
-                ),
-                SizedBox(width: 13.w),
-                Text(
-                  widget.name!,
-                  style: TextStyle(
+                Row(
+                  children: [
+                    SizedBox(width: 35.w),
+                    Icon(
+                      Icons.apartment,
+                      size: 24.h,
                       color: ThemeColors.primary,
-                      fontSize: 35.sp,
-                      fontFamily: 'Ubuntu'),
+                    ),
+                    SizedBox(width: 13.w),
+                    Text(
+                      widget.name!,
+                      style: TextStyle(
+                          color: ThemeColors.primary,
+                          fontSize: 35.sp,
+                          fontFamily: 'Ubuntu'),
+                    ),
+                  ],
                 ),
-                SizedBox(
-                  width: 300.w,
-                ),
+                
                 InkWell(
                     onTap: () {
                       setState(() {
