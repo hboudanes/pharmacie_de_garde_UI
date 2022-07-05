@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:pharmacie_de_garde_ui/theme/Image_path.dart';
 import 'package:pharmacie_de_garde_ui/theme/text_data.dart';
 import 'package:pharmacie_de_garde_ui/theme/theme_text_style.dart';
 
+import '/controller/splash_controller.dart';
+
 class Splash extends StatelessWidget {
-  const Splash({Key? key}) : super(key: key);
+  Splash({Key? key}) : super(key: key);
+  final SpalshController spalshController = Get.put(SpalshController());
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +54,8 @@ class Splash extends StatelessWidget {
                         color: Colors.white,
                         borderRadius:
                             BorderRadius.only(topLeft: Radius.circular(62.r))),
-                    child:
-                        Text(TextData.splashTextFr, style: ThemeTextStyle().splashText),
+                    child: Text(TextData.splashTextFr,
+                        style: ThemeTextStyle().splashText),
                   ),
                 ],
               ),

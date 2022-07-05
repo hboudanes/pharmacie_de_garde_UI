@@ -10,12 +10,15 @@ class PanlCity extends StatefulWidget {
   final String? scheduleNight;
   final String? scheduleDay;
   final String? ondutyDate;
+  final void Function()? onTap;
   const PanlCity(
       {Key? key,
       this.name,
       this.scheduleNight,
       this.scheduleDay,
-      this.ondutyDate})
+      this.ondutyDate,
+      this.onTap
+      })
       : super(key: key);
 
   @override
@@ -29,7 +32,7 @@ class _PanlCityState extends State<PanlCity> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: widget.onTap,
       child: AnimatedContainer(
         onEnd: () {
           setState(() {
@@ -62,13 +65,9 @@ class _PanlCityState extends State<PanlCity> {
                       color: ThemeColors.primary,
                     ),
                     SizedBox(width: 13.w),
-                    Text(
-                      widget.name!,
-                      style: ThemeTextStyle().panalTitle
-                    ),
+                    Text(widget.name!, style: ThemeTextStyle().panalTitle),
                   ],
                 ),
-                
                 InkWell(
                     onTap: () {
                       setState(() {
@@ -144,10 +143,8 @@ class _PanlCityState extends State<PanlCity> {
                               color: Colors.black,
                             ),
                             SizedBox(width: 12.w),
-                            Text(
-                              widget.scheduleNight!,
-                              style: ThemeTextStyle().panaltext
-                            ),
+                            Text(widget.scheduleNight!,
+                                style: ThemeTextStyle().panaltext),
                           ],
                         )
                       ],

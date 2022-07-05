@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-
-
-import 'view/pharmacie.dart';
-
-
+import '/routes/routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,14 +21,15 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(669.37, 1439.61),
       builder: (context, child) {
-        return MaterialApp(
+        return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             scaffoldBackgroundColor: const Color(0xFF5C4DB1),
             drawerTheme:
                 const DrawerThemeData(backgroundColor: Color(0xFFFAFAFA)),
           ),
-          home:const Pharmacie() ,
+          getPages: Routes().route,
+          initialRoute: '/splash',
         );
       },
     );

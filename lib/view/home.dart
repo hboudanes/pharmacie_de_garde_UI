@@ -21,16 +21,6 @@ class Home extends StatelessWidget {
     return Scaffold(
       key: scaffoldKey,
       drawer: const CustomDrawer(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          admobController.showInterstitialAd();
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) {
-              return Splash();
-            },
-          ));
-        },
-      ),
       body: SafeArea(
         child: Column(children: [
           SizedBox(height: 30.h),
@@ -49,7 +39,9 @@ class Home extends StatelessWidget {
               SearchBar(
                 title: 'hi',
                 onChanged: (String ff) {},
-                onTap: (String ff) {},
+                onTap: (String ff) {
+                  admobController.showInterstitialAd();
+                },
               )
             ],
           ),
@@ -72,6 +64,10 @@ class Home extends StatelessWidget {
                           return Column(
                             children: [
                               PanlCity(
+                                onTap: () {
+                                  admobController.showInterstitialAd();
+                                  Get.toNamed('/pharmacie');
+                                },
                                 name:
                                     controller.cities.elementAt(index)['name'],
                                 scheduleDay: controller.cities
