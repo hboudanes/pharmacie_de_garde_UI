@@ -12,6 +12,9 @@ abstract class TextData {
   static const String inFacebook = "Dans FaceBook";
   //share
   static const String share = "Partager";
-  //panal
+  //panelCity
   static const String valid = "Valide";
+  //panelCity pharmacy
+  static const String neighborhood = "Quartier";
+  static const String find = "Trouvez";
 }

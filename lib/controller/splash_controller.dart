@@ -9,7 +9,7 @@ class SpalshController extends GetxController {
   @override
   Future<void> onReady() async {
     await  sleep();
-    Get.offAllNamed('/');
+    Get.offAllNamed('/pharmacie');
     super.onReady();
   }
 

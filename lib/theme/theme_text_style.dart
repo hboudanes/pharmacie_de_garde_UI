@@ -24,7 +24,7 @@ class ThemeTextStyle {
       fontFamily: 'UbuntuBlod');
   final TextStyle drawerButton = TextStyle(
       color: ThemeColors.drawerTitle, fontSize: 29.sp, fontFamily: 'Ubuntu');
-  //panlcity
+  //panelcity
   final TextStyle panalTitle = TextStyle(
       color: ThemeColors.primary, fontSize: 30.sp, fontFamily: 'Ubuntu');
   final TextStyle panalSubTitleMedium = TextStyle(
@@ -33,4 +33,5 @@ class ThemeTextStyle {
       color: ThemeColors.primary, fontSize: 21.sp, fontFamily: 'Ubuntu');
   final TextStyle panaltext = TextStyle(
       color: Colors.black, fontSize: 20.sp, fontFamily: 'Ubuntublod');
+  
 }

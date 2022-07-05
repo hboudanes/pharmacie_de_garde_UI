@@ -5,7 +5,8 @@ import 'package:get/get.dart';
 import 'package:pharmacie_de_garde_ui/components/custom_drawer.dart';
 import 'package:pharmacie_de_garde_ui/theme/theme_colors.dart';
 
-import '../components/search_bar.dart';
+
+import '/components/panel_pharmacy.dart';
 import '/components/navigationbar/icon_Btn.dart';
 
 class Pharmacie extends StatelessWidget {
@@ -86,14 +87,26 @@ class Pharmacie extends StatelessWidget {
           SizedBox(height: 20.h),
           Expanded(
             child: Container(
-              padding:
-                  EdgeInsets.only(right: 20.2.w, left: 20.2.w, top: 20.2.h),
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(60.r),
-                      topRight: Radius.circular(60.r))),
-            ),
+                padding:
+                    EdgeInsets.only(right: 20.2.w, left: 20.2.w, top: 20.2.h),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(60.r),
+                        topRight: Radius.circular(60.r))),
+                child: ListView.builder(
+                  itemCount: 10,
+                  itemBuilder: (BuildContext context, index) {
+                    return Column(
+                      children: [
+                        PanelPharmacy(),
+                        SizedBox(
+                          height: 20.h,
+                        )
+                      ],
+                    );
+                  },
+                )),
           ),
         ]),
       ),
