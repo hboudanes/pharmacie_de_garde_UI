@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pharmacie_de_garde_ui/theme/Image_path.dart';
 
 import '../../theme/theme_colors.dart';
 

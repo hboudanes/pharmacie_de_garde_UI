@@ -11,9 +11,9 @@ import '/controller/home_controller.dart';
 import '/components/custom_drawer.dart';
 
 class Home extends StatelessWidget {
-   Home({Key? key}) : super(key: key);
-   AdmobController admobController = Get.put(AdmobController());
-
+  Home({Key? key}) : super(key: key);
+  AdmobController admobController = Get.put(AdmobController());
+  HomeController homeController = Get.put(HomeController());
   @override
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
@@ -27,7 +27,8 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () => scaffoldKey.currentState!.openDrawer(),
+                onTap: () =>
+                    scaffoldKey.currentState!.openDrawer(), //open drawer
                 child: Icon(
                   Icons.view_headline,
                   size: 50.h,
@@ -36,10 +37,12 @@ class Home extends StatelessWidget {
               ),
               SizedBox(width: 14.9.w),
               SearchBar(
-                title: 'hi',
-                onChanged: (String ff) {},
-                onTap: (String ff) {
-                  admobController.showInterstitialAd();
+                title: 'Trouvez le ville',
+                onChanged: (String value) {
+                  homeController.runFilter(value);
+                },
+                onTap: (String value) {
+                  homeController.runFilter(value);
                 },
               )
             ],
@@ -58,7 +61,7 @@ class Home extends StatelessWidget {
                   init: HomeController(),
                   builder: ((controller) {
                     return ListView.builder(
-                        itemCount: controller.cities.length,
+                        itemCount: controller.filterCities.length,
                         itemBuilder: ((BuildContext buildContext, index) {
                           return Column(
                             children: [
@@ -67,14 +70,14 @@ class Home extends StatelessWidget {
                                   admobController.showInterstitialAd();
                                   Get.toNamed('/pharmacie');
                                 },
-                                name:
-                                    controller.cities.elementAt(index)['name'],
-                                scheduleDay: controller.cities
+                                name: controller.filterCities
+                                    .elementAt(index)['name'],
+                                scheduleDay: controller.filterCities
                                     .elementAt(index)['in_night'],
-                                scheduleNight: controller.cities
+                                scheduleNight: controller.filterCities
                                     .elementAt(index)['in_day'],
-                                ondutyDate:
-                                    controller.cities.elementAt(index)['valid'],
+                                ondutyDate: controller.filterCities
+                                    .elementAt(index)['valid'],
                               ),
                               SizedBox(
                                 height: 10.h,

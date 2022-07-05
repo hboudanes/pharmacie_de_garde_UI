@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             drawerTheme:
                 const DrawerThemeData(backgroundColor: Color(0xFFFAFAFA)),
           ),
-          getPages: Routes().route,
+          getPages: Routes.route,
           initialRoute: '/splash',
         );
       },
