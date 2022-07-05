@@ -3,7 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 
-import '/view/home.dart';
+
+import 'view/pharmacie.dart';
 
 
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
             drawerTheme:
                 const DrawerThemeData(backgroundColor: Color(0xFFFAFAFA)),
           ),
-          home:  Home(),
+          home:const Pharmacie() ,
         );
       },
     );
