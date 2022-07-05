@@ -4,12 +4,12 @@ import 'dart:async';
 
 class SpalshController extends GetxController {
   
-  static Duration duration = const Duration(milliseconds: 500);
+  static Duration duration = const Duration(milliseconds: 900);
 
   @override
   Future<void> onReady() async {
     await  sleep();
-    Get.offAllNamed('/pharmacie');
+    Get.offAllNamed('/');
     super.onReady();
   }
 

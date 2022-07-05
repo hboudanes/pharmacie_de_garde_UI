@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'package:get/get.dart';
-import 'package:pharmacie_de_garde_ui/view/splash.dart';
 
 import '/components/panl_city.dart';
 import '/components/search_bar.dart';
@@ -12,8 +11,8 @@ import '/controller/home_controller.dart';
 import '/components/custom_drawer.dart';
 
 class Home extends StatelessWidget {
-  Home({Key? key}) : super(key: key);
-  AdmobController admobController = Get.put(AdmobController());
+   Home({Key? key}) : super(key: key);
+   AdmobController admobController = Get.put(AdmobController());
 
   @override
   Widget build(BuildContext context) {

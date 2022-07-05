@@ -24,17 +24,18 @@ class _NavigationBottomBarState extends State<NavigationBottomBar> {
       "iconData": Icons.light_mode,
     }
   ];
+   Color unSelectColor  = Colors.lightBlue;
+
+
+   Color selectColor = Colors.white;
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
       height: 70.0,
       duration: const Duration(milliseconds: 200),
       decoration: BoxDecoration(
-        // color: selectBtn == navBtn.length - 1 ?  Colors.amber: Colors.pink,
-        image: DecorationImage(
-            image: AssetImage(
-                selectBtn == data.length - 1 ? ImagePath.day : ImagePath.night),
-            fit: BoxFit.fill),
+        color: selectBtn == data.length - 1 ?  Colors.amber: ThemeColors.panelPharmacyColor,
+       
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(selectBtn == 0 ? 0.0 : 20.0),
           topRight: Radius.circular(selectBtn == data.length - 1 ? 0.0 : 20.0),
@@ -81,7 +82,7 @@ class _NavigationBottomBarState extends State<NavigationBottomBar> {
             alignment: Alignment.center,
             child: Icon(
               data.elementAt(i)['iconData'],
-              color: isActive ? selectColor : inselectColor,
+              color: isActive ? selectColor : unSelectColor,
             ),
           ),
         ],
@@ -119,8 +120,5 @@ class ButtonNotch extends CustomPainter {
   }
 }
 
-const Color inselectColor  = Color(0xFF4B3FFF);
 
-
-const Color selectColor = Colors.lightBlue;
 

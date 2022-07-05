@@ -6,10 +6,10 @@
             "city": "Casablanca",
             "telephone": "05 22 50 65 10",
             "coordinates": "33.537678, -7.604087",
-            "onDuty": "1",
-            "district": "Aïn chok",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:37:13"
+            "inNight": "1",
+            "neighborhood": "Aïn chok",
+            "inDay": "0"
+           
         },
         {
             "name": "Pharmacie Afak",
@@ -17,10 +17,9 @@
             "city": "Casablanca",
             "telephone": "05 22 62 83 70",
             "coordinates": "33.590862, -7.565563",
-            "onDuty": "0",
-            "district": "Hay mohammadi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:40:52"
+            "inNight": "0",
+            "neighborhood": "Hay mohammadi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Ahl Loughlam",
@@ -28,10 +27,9 @@
             "city": "Casablanca",
             "telephone": "05 22 01 04 75",
             "coordinates": "33.593403, -7.485475",
-            "onDuty": "0",
-            "district": "Sidi moumen",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:38:34"
+            "inNight": "0",
+            "neighborhood": "Sidi moumen",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Aida",
@@ -39,10 +37,9 @@
             "city": "Casablanca",
             "telephone": "05 22 26 32 53",
             "coordinates": "33.595488, -7.637978",
-            "onDuty": "0",
-            "district": "Gautier",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:44:49"
+            "inNight": "0",
+            "neighborhood": "Gautier",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Al Badr",
@@ -50,10 +47,9 @@
             "city": "Casablanca",
             "telephone": "05 22 58 49 87",
             "coordinates": "",
-            "onDuty": "1",
-            "district": "Sidi maârouf",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:42:50"
+            "inNight": "1",
+            "neighborhood": "Sidi maârouf",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Al Housne",
@@ -61,10 +57,9 @@
             "city": "Casablanca",
             "telephone": "05 20 05 14 58 ",
             "coordinates": "33.606559011114136, -7.487140892284434",
-            "onDuty": "0",
-            "district": "Sidi bernoussi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:38:09"
+            "inNight": "0",
+            "neighborhood": "Sidi bernoussi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Alkhozama",
@@ -72,10 +67,9 @@
             "city": "Casablanca",
             "telephone": "05 22 62 48 48",
             "coordinates": "33.579978, -7.557328",
-            "onDuty": "0",
-            "district": "Hay mohammadi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:40:57"
+            "inNight": "0",
+            "neighborhood": "Hay mohammadi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Amal El Firdaous",
@@ -83,10 +77,9 @@
             "city": "Casablanca",
             "telephone": "05 22 34 17 02",
             "coordinates": "",
-            "onDuty": "0",
-            "district": "Sidi bernoussi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:42:32"
+            "inNight": "0",
+            "neighborhood": "Sidi bernoussi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Areski",
@@ -94,10 +87,9 @@
             "city": "Casablanca",
             "telephone": "05 22 85 32 16",
             "coordinates": "",
-            "onDuty": "0",
-            "district": "Hay el farah",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:39:16"
+            "inNight": "0",
+            "neighborhood": "Hay el farah",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Argane",
@@ -105,10 +97,10 @@
             "city": "Casablanca",
             "telephone": "05 22 49 21 71",
             "coordinates": "33.600241, -7.637762",
-            "onDuty": "0",
-            "district": "Bourgogne",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:45:14"
+            "inNight": "0",
+            "neighborhood": "Bourgogne",
+            "inDay": "1"
+            
         },
         {
             "name": "Pharmacie Arrimal Addahabia",
@@ -116,10 +108,9 @@
             "city": "Casablanca",
             "telephone": "05 22 34 00 74",
             "coordinates": "33.617353, -7.536881",
-            "onDuty": "0",
-            "district": "Aïn sebaâ",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:37:56"
+            "inNight": "0",
+            "neighborhood": "Aïn sebaâ",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Arsalane",
@@ -127,10 +118,9 @@
             "city": "Casablanca",
             "telephone": "05 22 62 11 71",
             "coordinates": "33.584861, -7.580585",
-            "onDuty": "0",
-            "district": "Aïn Borja",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:40:33"
+            "inNight": "0",
+            "neighborhood": "Aïn Borja",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Assidk",
@@ -138,10 +128,9 @@
             "city": "Casablanca",
             "telephone": "05 22 70 92 77",
             "coordinates": "",
-            "onDuty": "1",
-            "district": "Hay moulay rachid",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:44:03"
+            "inNight": "1",
+            "neighborhood": "Hay moulay rachid",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie de l'hôpital Med V",
@@ -149,10 +138,9 @@
             "city": "Casablanca",
             "telephone": "05 22 35 72 90",
             "coordinates": "33.599367, -7.624668",
-            "onDuty": "0",
-            "district": "Hay mohammadi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:41:05"
+            "inNight": "0",
+            "neighborhood": "Hay mohammadi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie des Abattoirs",
@@ -160,10 +148,9 @@
             "city": "Casablanca",
             "telephone": "05 22 62 56 51",
             "coordinates": "33.593045, -7.578930",
-            "onDuty": "0",
-            "district": "Hay mohammadi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:40:39"
+            "inNight": "0",
+            "neighborhood": "Hay mohammadi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie du Caf",
@@ -171,10 +158,9 @@
             "city": "Casablanca",
             "telephone": "05 22 39 89 73",
             "coordinates": "33.565608, -7.647429",
-            "onDuty": "0",
-            "district": "Beauséjour",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:39:56"
+            "inNight": "0",
+            "neighborhood": "Beauséjour",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie du Théâtre",
@@ -182,10 +168,9 @@
             "city": "Casablanca",
             "telephone": "05 22 37 01 22",
             "coordinates": "33.563442, -7.554223",
-            "onDuty": "0",
-            "district": "Hay moulay rachid",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:44:11"
+            "inNight": "0",
+            "neighborhood": "Hay moulay rachid",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie El Kandara",
@@ -193,10 +178,9 @@
             "city": "Casablanca",
             "telephone": "05 22 27 40 83",
             "coordinates": "33.593975, -7.627561",
-            "onDuty": "0",
-            "district": "Lusitania",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:45:09"
+            "inNight": "0",
+            "neighborhood": "Lusitania",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie El Mokhtar",
@@ -204,10 +188,9 @@
             "city": "Casablanca",
             "telephone": "05 22 66 49 49",
             "coordinates": "33.602872, -7.543178",
-            "onDuty": "1",
-            "district": "Aïn sebaâ",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:37:50"
+            "inNight": "1",
+            "neighborhood": "Aïn sebaâ",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie El Youssoufi",
@@ -215,10 +198,9 @@
             "city": "Casablanca",
             "telephone": "05 22 57 96 62",
             "coordinates": "",
-            "onDuty": "0",
-            "district": "Sidi othman",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:44:20"
+            "inNight": "0",
+            "neighborhood": "Sidi othman",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Er-rayane",
@@ -226,10 +208,9 @@
             "city": "Casablanca",
             "telephone": "05 22 97 32 14",
             "coordinates": "33.530884, -7.651201",
-            "onDuty": "1",
-            "district": "Sidi maârouf",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:42:56"
+            "inNight": "1",
+            "neighborhood": "Sidi maârouf",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Fahd",
@@ -237,10 +218,9 @@
             "city": "Casablanca",
             "telephone": "05 22 90 75 20",
             "coordinates": "33.569103, -7.673411",
-            "onDuty": "1",
-            "district": "Oulfa",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:40:13"
+            "inNight": "1",
+            "neighborhood": "Oulfa",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Hatim",
@@ -248,10 +228,9 @@
             "city": "Casablanca",
             "telephone": "05 22 22 68 02",
             "coordinates": "33.593578, -7.616495",
-            "onDuty": "1",
-            "district": "Centre ville",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:44:32"
+            "inNight": "1",
+            "neighborhood": "Centre ville",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Hay Adil",
@@ -259,10 +238,9 @@
             "city": "Casablanca",
             "telephone": "05 22 63 87 58",
             "coordinates": "33.576859, -7.566208",
-            "onDuty": "0",
-            "district": "Aïn Borja",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:40:28"
+            "inNight": "0",
+            "neighborhood": "Aïn Borja",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Ibnou Sinaa",
@@ -270,10 +248,9 @@
             "city": "Casablanca",
             "telephone": "05 22 72 87 47",
             "coordinates": "33.594249, -7.558357",
-            "onDuty": "0",
-            "district": "Sidi moumen",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:43:36"
+            "inNight": "0",
+            "neighborhood": "Sidi moumen",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Jardin Isesco",
@@ -281,10 +258,9 @@
             "city": "Casablanca",
             "telephone": "05 22 29 75 45",
             "coordinates": "33.579729, -7.611843",
-            "onDuty": "0",
-            "district": "Mers sultan",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:39:21"
+            "inNight": "0",
+            "neighborhood": "Mers sultan",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Kissariat Aziza",
@@ -292,10 +268,9 @@
             "city": "Casablanca",
             "telephone": "05 22 63 51 13",
             "coordinates": "",
-            "onDuty": "0",
-            "district": "Hay mohammadi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:41:16"
+            "inNight": "0",
+            "neighborhood": "Hay mohammadi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie le Corail",
@@ -303,10 +278,9 @@
             "city": "Casablanca",
             "telephone": "05 22 39 82 22",
             "coordinates": "33.588994, -7.651876",
-            "onDuty": "0",
-            "district": "Anfa Supérieur",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:44:55"
+            "inNight": "0",
+            "neighborhood": "Anfa Supérieur",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Mabrouk",
@@ -314,10 +288,9 @@
             "city": "Casablanca",
             "telephone": "05 22 62 63 61",
             "coordinates": "33.587907, -7.569616",
-            "onDuty": "0",
-            "district": "Hay mohammadi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:41:30"
+            "inNight": "0",
+            "neighborhood": "Hay mohammadi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Mçalla",
@@ -325,10 +298,9 @@
             "city": "Casablanca",
             "telephone": "05 22 21 48 13",
             "coordinates": "33.548996, -7.599675",
-            "onDuty": "0",
-            "district": "Aïn chok",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:37:29"
+            "inNight": "0",
+            "neighborhood": "Aïn chok",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Merieux",
@@ -336,10 +308,9 @@
             "city": "Casablanca",
             "telephone": "05 22 86 05 70",
             "coordinates": "33.568087, -7.625943",
-            "onDuty": "0",
-            "district": "Hermitage - hôpitaux",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:45:00"
+            "inNight": "0",
+            "neighborhood": "Hermitage - hôpitaux",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Moulay Ahmed",
@@ -347,10 +318,9 @@
             "city": "Casablanca",
             "telephone": "05 22 65 86 08",
             "coordinates": "33.534212, -7.706119",
-            "onDuty": "1",
-            "district": "Lissasfa",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:41:49"
+            "inNight": "1",
+            "neighborhood": "Lissasfa",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Moumen",
@@ -358,10 +328,9 @@
             "city": "Casablanca",
             "telephone": "05 22 82 69 00",
             "coordinates": "33.564467, -7.604639",
-            "onDuty": "1",
-            "district": "Nouvelle médina",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:39:08"
+            "inNight": "1",
+            "neighborhood": "Nouvelle médina",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Najd",
@@ -369,10 +338,9 @@
             "city": "Casablanca",
             "telephone": "05 22 25 60 64",
             "coordinates": "33.578707, -7.634641",
-            "onDuty": "1",
-            "district": "Palmiers",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:44:37"
+            "inNight": "1",
+            "neighborhood": "Palmiers",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Nouamani",
@@ -380,10 +348,9 @@
             "city": "Casablanca",
             "telephone": "05 22 65 12 42",
             "coordinates": "33.529475, -7.676397",
-            "onDuty": "1",
-            "district": "Lissasfa",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:42:00"
+            "inNight": "1",
+            "neighborhood": "Lissasfa",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Oussama",
@@ -391,10 +358,9 @@
             "city": "Casablanca",
             "telephone": "05 22 73 57 37",
             "coordinates": "33.614696, -7.500224",
-            "onDuty": "1",
-            "district": "Sidi bernoussi",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:42:24"
+            "inNight": "1",
+            "neighborhood": "Sidi bernoussi",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Ouzineb",
@@ -402,10 +368,9 @@
             "city": "Casablanca",
             "telephone": "05 22 62 00 95",
             "coordinates": "33.582377, -7.567413",
-            "onDuty": "0",
-            "district": "Hay mohammadi",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:41:21"
+            "inNight": "0",
+            "neighborhood": "Hay mohammadi",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie prolongement 2 Mars",
@@ -413,10 +378,9 @@
             "city": "Casablanca",
             "telephone": "05 22 21 46 73",
             "coordinates": "33.556223, -7.605958",
-            "onDuty": "0",
-            "district": "Aïn chok",
-            "onDutyDay": "1",
-            "timestamp": "2022-07-04 13:37:19"
+            "inNight": "0",
+            "neighborhood": "Aïn chok",
+            "inDay": "1"
         },
         {
             "name": "Pharmacie Riad Al Hadika",
@@ -424,10 +388,9 @@
             "city": "Casablanca",
             "telephone": "05 22 72 42 43",
             "coordinates": "",
-            "onDuty": "1",
-            "district": "Sidi moumen",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:43:15"
+            "inNight": "1",
+            "neighborhood": "Sidi moumen",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Sourzac",
@@ -435,10 +398,9 @@
             "city": "Casablanca",
             "telephone": "05 22 24 33 40",
             "coordinates": "33.598840, -7.580441",
-            "onDuty": "1",
-            "district": "Roches noires",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:38:50"
+            "inNight": "1",
+            "neighborhood": "Roches noires",
+            "inDay": "0"
         },
         {
             "name": "Pharmacie Tam",
@@ -446,10 +408,9 @@
             "city": "Casablanca",
             "telephone": "05 22 90 18 99",
             "coordinates": "33.552952, -7.677567",
-            "onDuty": "1",
-            "district": "Oulfa",
-            "onDutyDay": "0",
-            "timestamp": "2022-07-04 13:39:52"
+            "inNight": "1",
+            "neighborhood": "Oulfa",
+            "inDay": "0"
         }
     ]
 }

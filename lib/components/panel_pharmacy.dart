@@ -10,17 +10,17 @@ class PanelPharmacy extends StatefulWidget {
   final String? neighborhood;
   final String? coordinates;
   final String? phone;
-  final void Function()? onTap;
-  final bool mode; //change color theme between night and day
+  final void Function()? onPressed;
+  final bool? mode; //change color theme between night and day
   const PanelPharmacy(
       {Key? key,
-      this.name = 'Pharmacie Almajad',
-      this.address = '17 Rue almarsoki qu jnane colone 2 Safi',
-      this.neighborhood = "Jnane Colone 2",
-      this.coordinates = "33.606559011114136, -7.487140892284434",
-      this.phone = "0614145370",
-      this.onTap,
-      this.mode = true})
+      this.name,
+      this.address="null",
+      this.neighborhood=" ",
+      this.coordinates="",
+      this.phone="",
+      required this.onPressed,
+      this.mode})
       : super(key: key);
 
   @override
@@ -31,32 +31,22 @@ class _PanelPharmacyState extends State<PanelPharmacy> {
   bool isExpanded = false;
   double height = 115.h;
   double counter = 0;
-  late Color iconColor; //black and white
-  late Color panelColor; //panel background and and Text Button Color
-  late Color panelTextColor; //panel Text and and background Button Color
-  late IconData icon;
-  @override
-  void initState() {
-    if (widget.mode) {
-      setState(() {
-        iconColor = Colors.white;
-        panelColor = ThemeColors.panelPharmacyColor;
-        panelTextColor = ThemeColors.panelPharmacyTextColor;
-        icon = Icons.nights_stay;
-      });
-    } else {
-      setState(() {
-        iconColor = Colors.black87;
-        panelColor = ThemeColors.panelPharmacyTextColor;
-        panelTextColor = ThemeColors.panelPharmacyColor;
-        icon = Icons.light_mode;
-      });
-    }
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
+    Color iconColor = widget.mode!
+        ? Colors.white
+        : Colors
+            .black87; //if mode is true => night => black and if mode is False => Day => black white
+
+    Color panelColor = widget.mode!
+        ? ThemeColors.panelPharmacyColor
+        : ThemeColors.panelPharmacyTextColor;
+    Color panelTextColor = widget.mode!
+        ? ThemeColors.panelPharmacyTextColor
+        : ThemeColors.panelPharmacyColor;
+    // change betwen panalColor and panelPharmacyTextColor if mode is true => night => panalColor =panelPharmacyColor and Day ...
+    IconData icon = widget.mode! ? Icons.nights_stay : Icons.light_mode;
     return AnimatedContainer(
       onEnd: () {
         setState(() {
@@ -152,6 +142,7 @@ class _PanelPharmacyState extends State<PanelPharmacy> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
@@ -193,9 +184,7 @@ class _PanelPharmacyState extends State<PanelPharmacy> {
                               ],
                             ),
                             ElevatedButton.icon(
-                              onPressed: () {
-                                widget.onTap;
-                              },
+                              onPressed:widget.onPressed,
                               style: ElevatedButton.styleFrom(
                                   padding: EdgeInsets.symmetric(
                                       horizontal: 3.w, vertical: 5.h),

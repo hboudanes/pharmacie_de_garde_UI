@@ -2,24 +2,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:pharmacie_de_garde_ui/components/custom_drawer.dart';
-import 'package:pharmacie_de_garde_ui/theme/theme_colors.dart';
+import 'package:pharmacie_de_garde_ui/controller/pharmacy_controller.dart';
 
-
+import '/controller/admob_controller.dart';
 import '/components/panel_pharmacy.dart';
-import '/components/navigationbar/icon_Btn.dart';
+import '/components/navigationbar/navigation_bottom_bar.dart';
 
 class Pharmacie extends StatelessWidget {
-  const Pharmacie({Key? key}) : super(key: key);
-
+  Pharmacie({Key? key}) : super(key: key);
+  final PharmacyController pharmacyController = Get.put(PharmacyController());
+  final AdmobController admobController = Get.put(AdmobController());
   @override
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
       key: scaffoldKey,
       bottomNavigationBar: NavigationBottomBar(onTap: (int? i) {
-        //i=0 day and i= 1 nuit
-        print(i);
+        pharmacyController.changeMode(i!);
       }),
       drawer: CustomDrawer(),
       body: SafeArea(
@@ -31,7 +32,7 @@ class Pharmacie extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
+                SizedBox(
                   height: 130.h,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -46,7 +47,9 @@ class Pharmacie extends StatelessWidget {
                         ),
                       ),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Get.back();
+                        },
                         child: Icon(
                           Icons.arrow_back_ios,
                           size: 30.h,
@@ -94,20 +97,48 @@ class Pharmacie extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(60.r),
                         topRight: Radius.circular(60.r))),
-                child: ListView.builder(
-                  itemCount: 10,
-                  itemBuilder: (BuildContext context, index) {
-                    return Column(
-                      children: [
-                        PanelPharmacy(),
-                        SizedBox(
-                          height: 20.h,
-                        )
-                      ],
-                    );
-                  },
-                )),
+                child: GetBuilder<PharmacyController>(
+                    init: PharmacyController(),
+                    builder: (contoller) {
+                      return ListView.builder(
+                        itemCount: contoller.pharmacies.length,
+                        itemBuilder: (BuildContext context, index) {
+                          return Column(
+                            children: [
+                              PanelPharmacy(
+                                name: contoller.pharmacies
+                                    .elementAt(index)["name"],
+                                address: contoller.pharmacies
+                                    .elementAt(index)["address"],
+                                neighborhood: contoller.pharmacies
+                                    .elementAt(index)["neighborhood"],
+                                coordinates: contoller.pharmacies
+                                    .elementAt(index)["coordinates"],
+                                mode: pharmacyController.mode,
+                                onPressed: () {
+                                  admobController.showInterstitialAd();
+                                },
+                              ),
+                              SizedBox(
+                                height: 20.h,
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    })),
           ),
+          Obx(() {
+            if (admobController.isBannerPharmacieAdLoade.value) {
+              return Container(
+                color: Colors.white,
+                height:
+                    admobController.bannerPharmacieAd.size.height.toDouble(),
+                child: AdWidget(ad: admobController.bannerPharmacieAd),
+              );
+            }
+            return const SizedBox(height: 0);
+          })
         ]),
       ),
     );

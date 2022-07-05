@@ -10,19 +10,21 @@ class AdmobController extends GetxController {
   // the ad won’t be loaded and we only want it to be set to true when it is.
   late BannerAd largeBannerAd;
   late BannerAd bannerAd;
-
+  late BannerAd bannerPharmacieAd;
   InterstitialAd? interstitialAd;
   static const int maxFailedLoadAttempts = 3;
   int interstitialLoadAttempts = 0;
 
   RxBool isLargeBannerAdLoaded = false.obs;
   RxBool isBannerAdLoaded = false.obs;
+  RxBool isBannerPharmacieAdLoade = false.obs;
 
   @override
   void onInit() {
     createlargeBannerAd();
     createBannerAd();
     createInterstitialAd();
+    createBannerPharmacieAd();
     super.onInit();
   }
 
@@ -61,6 +63,23 @@ class AdmobController extends GetxController {
     bannerAd.load();
   }
 
+  void createBannerPharmacieAd() {
+    bannerPharmacieAd = BannerAd(
+      adUnitId: AdHelper.bannerAdUnitId,
+      size: AdSize.banner,
+      request: const AdRequest(),
+      listener: BannerAdListener(
+        onAdLoaded: (_) {
+          isBannerPharmacieAdLoade.value = true;
+        },
+        onAdFailedToLoad: (ad, error) {
+          ad.dispose();
+        },
+      ),
+    );
+    bannerPharmacieAd.load();
+  }
+
   void createInterstitialAd() {
     InterstitialAd.load(
       adUnitId: AdHelper.interstitialAdUnitId,
@@ -71,7 +90,6 @@ class AdmobController extends GetxController {
           interstitialLoadAttempts = 0;
         },
         onAdFailedToLoad: (LoadAdError error) {
-          
           interstitialLoadAttempts += 1;
           interstitialAd = null;
           if (interstitialLoadAttempts <= maxFailedLoadAttempts) {
@@ -102,6 +120,7 @@ class AdmobController extends GetxController {
   void onClose() {
     largeBannerAd.dispose();
     bannerAd.dispose();
+    bannerPharmacieAd.dispose();
     interstitialAd?.dispose();
     // This will ensure that we free up the resources when they are no longer needed.
     super.onClose();
