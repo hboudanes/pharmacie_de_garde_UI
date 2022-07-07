@@ -19,15 +19,16 @@ class Pharmacie extends StatelessWidget {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
       key: scaffoldKey,
+      resizeToAvoidBottomInset: false,
+      extendBody: true,
       bottomNavigationBar: NavigationBottomBar(onTap: (int? i) {
         pharmacyController.changeMode(i!);
       }),
       drawer: CustomDrawer(),
       body: SafeArea(
-        child: Column(
-          children: [
+        bottom: false,
+        child: Column(children: [
           SizedBox(height: 30.h),
-          
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 15.w),
             child: Row(
@@ -41,7 +42,8 @@ class Pharmacie extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       InkWell(
-                        onTap: () => scaffoldKey.currentState!.openDrawer(),//open drawer button 
+                        onTap: () => scaffoldKey.currentState!
+                            .openDrawer(), //open drawer button
                         child: Icon(
                           Icons.view_headline,
                           size: 50.h,
