@@ -21,10 +21,10 @@ class AdmobController extends GetxController {
 
   @override
   void onInit() {
-    createlargeBannerAd();
-    createBannerAd();
-    createInterstitialAd();
-    createBannerPharmacieAd();
+    // createlargeBannerAd();
+    // createBannerAd();
+    // createInterstitialAd();
+    // createBannerPharmacieAd();
     super.onInit();
   }
 
@@ -101,19 +101,19 @@ class AdmobController extends GetxController {
   }
 
   void showInterstitialAd() {
-    if (interstitialAd != null) {
-      interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
-        onAdDismissedFullScreenContent: (InterstitialAd ad) {
-          ad.dispose();
-          createInterstitialAd();
-        },
-        onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
-          ad.dispose();
-          createInterstitialAd();
-        },
-      );
-      interstitialAd!.show();
-    }
+    // if (interstitialAd != null) {
+    //   interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+    //     onAdDismissedFullScreenContent: (InterstitialAd ad) {
+    //       ad.dispose();
+    //       createInterstitialAd();
+    //     },
+    //     onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
+    //       ad.dispose();
+    //       createInterstitialAd();
+    //     },
+    //   );
+    //   interstitialAd!.show();
+    // }
   }
 
   @override
