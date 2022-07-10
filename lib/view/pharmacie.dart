@@ -26,7 +26,7 @@ class Pharmacie extends StatelessWidget {
       }),
       drawer: CustomDrawer(),
       body: SafeArea(
-        bottom: false,
+        maintainBottomViewPadding: true,
         child: Column(children: [
           SizedBox(height: 30.h),
           Padding(
@@ -118,6 +118,8 @@ class Pharmacie extends StatelessWidget {
                                     .elementAt(index)["neighborhood"],
                                 coordinates: contoller.pharmacies
                                     .elementAt(index)["coordinates"],
+                                phone: contoller.pharmacies
+                                    .elementAt(index)["telephone"],
                                 mode: pharmacyController.mode,
                                 onPressed: () {
                                   admobController.showInterstitialAd();
