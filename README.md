@@ -14,7 +14,7 @@
   <h3 align="center">PHARMACIE DE GARDE</h3>
 
   <p align="center">
-    The Pharmacies de Garde Morocco application allows you to search in a precise and/or exact way (Use maps) in real time all the pharmacies on guard day and night in several Moroccan cities
+    Pharmacies on duty Morocco application allows you to search in a precise and/or exact way (Use maps) in real time all the pharmacies on guard day and night in several Moroccan cities
    
   </p>
 </div>
